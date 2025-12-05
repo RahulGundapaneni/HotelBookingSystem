@@ -15,7 +15,7 @@ A Java Spring Boot backend that powers searching hotel availability, managing ro
 - Java 17 + Spring Boot 3.4
 - Spring Web MVC, Spring Data JPA, Bean Validation
 - H2 for local development storage (swap for PostgreSQL/MySQL in staging)
-- Maven build with reproducible wrapper scripts
+- Maven build using local installation (wrapper optional)
 - JUnit + Spring Test for service and controller coverage
 
 ## Project Layout
