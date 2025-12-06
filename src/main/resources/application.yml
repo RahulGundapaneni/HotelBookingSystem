@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: booking-service
+  datasource:
+    url: jdbc:h2:mem:bookingdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+logging:
+  level:
+    org.springframework: INFO
+    com.hotelbooking: DEBUG
+server:
+  port: 8080
