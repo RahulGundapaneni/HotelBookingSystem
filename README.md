@@ -6,6 +6,7 @@ A Java Spring Boot backend that powers searching hotel availability, managing ro
 
 - Manage hotels, rooms, room types, and nightly rates in a relational schema
 - Query availability across cities and date ranges with occupancy filters
+- Explore catalogued hotels via REST with optional city filtering
 - Create, confirm, and cancel bookings while tracking guest profiles
 - Provide validation and conflict detection on overlapping reservations
 - Deliver integration-friendly responses with DTOs and versioned endpoints
@@ -41,7 +42,7 @@ A Java Spring Boot backend that powers searching hotel availability, managing ro
 
 1. Model hotels, rooms, and bookings entities with validation helpers
 2. Implement availability search and reservation orchestration services
-3. Wire REST controllers with DTOs, error handling, and request logging
+3. Wire REST controllers with DTOs, error handling, hotel catalogue listing, and request logging
 4. Introduce persistence migrations and seed data for local dev
 5. Add CI workflow plus containerized runtime definition
 
